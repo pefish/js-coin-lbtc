@@ -1,8 +1,22 @@
+import BaseWalletHelper from 'js-btc/lib/base/base_bitcoinjs_lib'
 
-import BtcWalletHelper from 'js-btc/lib/wallet'
+declare global {
+  namespace NodeJS {
+    interface Global {
+      logger: any;
+    }
+  }
+}
 
-export default class Wallet extends BtcWalletHelper {
-  constructor () {
+/**
+ * 构建未签名交易没问题，签名有问题
+ */
+export default class Wallet extends BaseWalletHelper {
+  decimals: number = 7;
+  bitcoinLib: any
+
+  public constructor () {
     super()
+    this.bitcoinLib = require('btc-bitcoinjs-lib')
   }
 }
