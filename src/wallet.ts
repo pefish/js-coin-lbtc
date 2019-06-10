@@ -1,4 +1,4 @@
-import BaseWalletHelper from 'js-btc/lib/base/base_bitcoinjs_lib'
+import BaseWalletHelper from '@pefish/js-coin-btc/lib/base/base_bitcoinjs_lib'
 
 declare global {
   namespace NodeJS {
@@ -17,6 +17,6 @@ export default class Wallet extends BaseWalletHelper {
 
   public constructor () {
     super()
-    this.bitcoinLib = require('btc-bitcoinjs-lib')
+    this.bitcoinLib = require('@pefishbitcoinjs-lib')
   }
 }

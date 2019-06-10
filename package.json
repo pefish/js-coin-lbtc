@@ -1,6 +1,6 @@
 {
-  "name": "js-lbtc",
-  "version": "0.0.2",
+  "name": "@pefish/js-coin-lbtc",
+  "version": "0.0.3",
   "description": "lbtc tool of js",
   "keywords": [
     "common",
@@ -33,11 +33,9 @@
     "typescript": "^3.4.5"
   },
   "dependencies": {
-    "bigi": "^1.4.2",
-    "btc-bitcoinjs-lib": "^5.0.5",
-    "js-btc": "^0.2.4",
-    "js-node-assist": "^0.5.6",
-    "p-js-error": "^0.0.4",
-    "p-js-utils": "^0.0.8"
+    "@pefish/bitcoinjs-lib": "^5.2.0",
+    "@pefish/js-coin-btc": "^0.3.1",
+    "@pefish/js-error": "^0.0.5",
+    "@pefish/js-node-assist": "^0.6.2"
   }
 }
